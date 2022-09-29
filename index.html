@@ -5,31 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
        <!--Título-->
         <h1 class="title">Jokenpô</h1>
-        <!--Pontos-->
+
+       <!--Escolhas-->
+       <div class="choices">
+        <h2>Escolha sua jogada</h2>
+         <button class="choices" data-choices="rock">Pedra</button>
+         <button class="choices" data-choices="paper">Papel</button>
+         <button class="choices" data-choices="scissors">Tesoura</button>
+       </div>
+
+       <!--Pontos-->
        <div class="score">
         <div class="playerScore">
           <h2>Você</h2>
-          <p class="c-count">0</p>
+          <p class="points">0</p>
         </div>
         <div class="computerScore">
-          <h2>Oponente</h2>
-          <p class="c-count">0</p>
+          <h2>Computador</h2>
+          <p class="points">0</p>
         </div>
        </div>
-      <!--Escolhas-->
-       <div class="choices">
-        <h2>Escolha sua jogada</h2>
-         <button id="rock">Pedra</button>
-         <button id="paper">Papel</button>
-         <button id="scissor">Tesoura</button>
-       </div>
-       
+       <!--Resultado-->
        <div class="result"></div>
+       <!--Reiniciar-->
        <button class="reload"></button>
     </div>
     <script src="app.js"></script>
